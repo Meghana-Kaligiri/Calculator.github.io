@@ -1,51 +1,278 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width,intial-scale=1.0">
-        <title>Calculator Using Javascript</title>
-        <link rel="stylesheet" href="style.css">
-     </head>
-    <body>
-        <div class="container">
-            <div class="calculator">
-                <form>
-                    <h1 style="color: aliceblue;">Calculator</h1>
-                    <div class="display">
-                        <input type="text" name="display">
-                    </div>
-                    <div>
-                        <input type="button" value="AC" onclick="display.value = '' " class="operator">
-                        <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)" class="operator"> 
-                        <input type="button" value="." onclick="display.value += '.' " class="operator">
-                        <input type="button" value="/" onclick="display.value += '/' " class="operator">
-                    </div>
-                    <div>
-                        <input type="button" value="7" onclick="display.value += '7' ">
-                        <input type="button" value="8" onclick="display.value += '8' ">
-                        <input type="button" value="9" onclick="display.value += '9' ">
-                        <input type="button" value="*" onclick="display.value += '*' " class="operator">
-                    </div>
-                    <div>
-                        <input type="button" value="4" onclick="display.value += '4' ">
-                        <input type="button" value="5" onclick="display.value += '5' ">
-                        <input type="button" value="6" onclick="display.value += '6' ">
-                        <input type="button" value="-" onclick="display.value += '-' " class="operator">
-                    </div>
-                    <div>
-                        <input type="button" value="1" onclick="display.value += '1' ">
-                        <input type="button" value="2" onclick="display.value += '2' ">
-                        <input type="button" value="3" onclick="display.value += '3' ">
-                        <input type="button" value="+" onclick="display.value += '+' " class="operator">
-                    </div>
-                    <div>
-                        <input type="button" value="00" onclick="display.value += '00' ">
-                        <input type="button" value="0" onclick="display.value += '0' ">
-                        <input type="button" value="=" onclick="display.value =eval(display.value)" class="equal operator">
-                    </div>
-                </form>
-            </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatibile" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <!------------box icons-------->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
 
+  <body>
+     <!------------------------------header design--------------------------------->
+     <header class="header">
+              <a href="#" class="logo">Portfolio</a>
+              <i class="bx bx-menu" id="menu-icon"></i>
+       <nav class="navbar">
+              <a href="#home" class="active">Home</a>
+              <a href="#about">About</a>
+              <a href="#certifications">Certifications</a>
+              <a href="#skills">Skills</a>
+              <a href="#portfolio">Portfolio</a>
+              <a href="#contact">Contact</a>
+       </nav>
+    </header>
+
+       <!--------home section design---------->
+    <section class="home" id="home">
+        <div class="home-content">
+           <h3>Hello, It's Me</h3>
+           <h1>Meghana Kaligiri</h1>
+           <h3>And I'm a <span class="multiple-text"></span></h3>
+           <p> 😇Feel free to connect with me on👇</p>
+       <!-------- socil media apps -------->
+           <div class="social-media">
+             <a href="#"><i class="bx bxl-facebook"></i></a>
+             <a href="https://github.com/Meghana-Kaligiri"><i class="bx bxl-github"></i></a>
+             <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+             <a href="https://www.linkedin.com/in/meghana-kaligiri-3b6216249"><i class="bx bxl-linkedin"></i></a>
+            </div>
+           <a href="#" class="btn">Download CV</a>
+         </div>
+         
+
+         <div class="home-img">
+            <img src="meghanaphoto.jpg"  height="400px" width="9500px">
+         </div>
+    </section>
+
+    <!--------------------------------about section design------------------------>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="meghanaphoto.jpg">
         </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Python Enthusiastic🐍 || Front End Developer || Web Scrapper🧑‍💻 || Software Development Enthusiast🤓|| Data Science || Core Java💫</h3>
+            <p> Hi there😃!<br>
+                I'm Meghana Kaligiri and I am currently pursuing my 🎓undergraduate degree in 🖥️ Computer Science and Engineering.<br>
+                
+                🚀🚀Technical Skills:I possess proficiency in several programming languages including C, Java, and Python🐍. Additionally, I am skilled in working with SQL databases, HTML, CSS🧑‍💻 for web technologies, and libraries such as Numpy and Pandas. My knowledge extends to operating systems, computer networks, and data structures.
+                <br>
+                💼Work Experience:
+                I have gained valuable experience through internships, including a Frontend Development Internship at IBM SkillsBuild and a Python Development Internship at Think Champ.
+                <br>
+                Projects:
+                My practical skills are demonstrated through projects such as:
+                Portfolio Website: Created a personal website using HTML and CSS.
+                Company Website Design: Developed a Front End Website consisting of Home, About, Courses, Blog, and Contact pages using HTML and CSS.
+                <br>
+                👩🏻‍🎓Certifications:
+                I hold several certifications that showcase my expertise, including being a Certified in CCNA, Python, Web Designing, Web Scraping, Azure Data Fundamentals-Microsoft,Data Analytics and Visualization Virtual Experience-accenture,Advanced Computer Architecture – NPTEL,21st Century Core Employability Skills Program - Skill AP APSSDC.
+                <br>
+                Extracurricular Activities:
+                I actively engage in extracurricular activities and participated in Virtusa's global initiative Engineering Equity Hackathon,Level 1.1 Commerce & Tech Quiz of Flipkart GRiD 5.0 - Software Development Track by Flipkart, demonstrating my passion for innovative problem solving.
+                <br>
+                My technical proficiency, work experience, and certifications reflect my commitment to continuous learning and 🌱growth in the field.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-----------------------------------------certifications  section design --------->
+    <section class="certifications" id="certifications">
+        <h2 class="heading">Certifi<span>cations</span></h2>
+        <div class="certifications-container">
+            <div class="certifications-box">
+                <i class="bx bxs-paint"></i>
+                <h3>Internships</h3>
+                <p>I have gained valuable experience through internships, including a Frontend Development 
+                    Internship and a Python Development.    
+                </p>
+                <a href="https://drive.google.com/drive/folders/1v-7Tp9mo0i6DVcgDopiZT5EU4dHR1LZb?usp=sharing" class="btn">Visit Here</a>
+            </div>
+             
+            <div class="certifications-box">
+                  <i class="bx bx-code-alt"></i>
+                  <h3>Courses</h3>
+                  <p> I hold several certifications that showcase my expertise
+                  </p>
+                  <a href="https://drive.google.com/drive/folders/1TZAUofpUm64CjyKnapU_HfJAvEQxkDCD?usp=sharing" class="btn">Visit Here</a>
+            </div>
+             
+            <div class="certifications-box">
+                <i class="bx bxs-paint"></i>
+                <h3>Extracurricular Activities</h3>
+                <p>I actively engage in extracurricular activities and participated in hackathons, demonstrating my passion for innovative problem solving
+                </p>
+                <a href="https://drive.google.com/drive/folders/1BJTm4G6YzxmB5YtkpbhMDWGqG_1vz3ER?usp=sharing" class="btn">Visit Here</a>
+            </div>
+             
+        </div>
+    </section>
+    <!---------skills section design---------------------->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-row">
+            <div class="skills-column">
+                <div class="title"></div>
+                   <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                               <h3>HTML <span>90%</span></h3>
+                                   <div class="bar"><span></span></div>
+                            </div>
+                        <div class="progress">
+                               <h3>CSS<span>85%</span></h3>
+                          <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Python <span>93%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Java <span>80%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills-column">
+            <div class="title"></div>
+            <div class="skills-box">
+                <div class="skills-content">
+                    <div class="progress">
+                        <h3>SQL <span>81%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>C <span>87%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Numpy <span>84%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Pandas <span>86%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!------portfolio section design------------------->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="portfolio_calculator.jpg" alt="" height="250px" width="250px">
+                <div class="portfolio-layer">
+                    <h4>Calculator Design</h4>
+                    <p>  A simple calculator app design to streamline your everyday calculations.
+                        Build with a blent of HTML,CSS and JavaScript
+                    </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolioimage_1.jpg" alt="" height="250px" width="250px">
+                <div class="portfolio-layer">
+                    <h4>Company Website Design</h4>
+                    <p>A company website design that describes the set of services what they are offering that includes
+                        pages like Home,About,Courses,Blog,Contact.
+                    </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolio_image2.jpg" alt="" height="250px" width="250px">
+                <div class="portfolio-layer">
+                    <h4>Train Ticket Booking System</h4>
+                    <p>The Railway Reservation System will provide the available Train-list, and Seat-availability, Cost,Via-details. 
+                    </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolio_image.jpg" alt="" height="250px" width="250px">
+                <div class="portfolio-layer">
+                    <h4>Portfolio Website</h4>
+                    <p>A High-Quality Image of MySelf on portfio website. It helps you connect with me and know more about my work.
+                    </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolioimg_ludogame.jpg" alt="" height="250px" width="250px">
+                <div class="portfolio-layer">
+                    <h4>Ludo Game Design</h4>
+                    <p>The main screen of the game features a colorful game board with a classic 
+                        Ludo layout. The board includes the four starting points
+                         for each player, as well as the four home bases.
+                    </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolio_conmanagemeimg.jpg" alt="" height="250px" width="250px">
+                <div class="portfolio-layer">
+                    <h4>Contact Management System</h4>
+                    <p>Contact management is the process of recording contacts' details
+                         and tracking their interactions with a business. 
+                    </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------conatct section page-------->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="#">
+             <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+             </div>
+
+             <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+             </div>
+
+            <textarea type="text" name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+             
+        </form>
+
+    </section>
+
+    <!-----footer design --------->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Meghana Kaligiri | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+     
+    <!-----scroll reveal------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-----typed js---->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="script.js"></script>
 
     </body>
 </html>
+                  
+                  
+                     
